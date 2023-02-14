@@ -1,0 +1,13 @@
+/* main part mobile */
+.mobile-part{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: auto;
+}
+
+.mobile-heading{
+display: flex;
+align-items: center;
+
+}

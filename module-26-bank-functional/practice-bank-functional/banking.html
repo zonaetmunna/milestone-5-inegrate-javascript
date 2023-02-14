@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>banking</title>
+
+     <!-- tailwind css link -->
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+     <header>
+          <h1 class="text-4xl text-center mt-8	">lets save <span class="text-yellow-500 font-semibold">moneyyyyy
+                    !!</span> </h1>
+     </header>
+
+     <main class="w-3/4 mx-auto text-black-200">
+          <!-- blance and transction -->
+          <section class="mt-8">
+               <div class="grid grid-cols-3 gap-4">
+                    <!-- deposit -->
+                    <div class="bg-blue-300 p-8 rounded">
+                         <h1 class="text-2xl">Deposit</h1>
+                         <h2 class="text-4xl">$ <span id="deposite-total"> 00</span></h2>
+
+                    </div>
+                    <!-- withdraw -->
+                    <div class="bg-green-300 p-8 rounded">
+                         <h1 class="text-2xl">Withdraw</h1>
+                         <h2 class="text-4xl">$<span id="withdraw-total">00</span></h2>
+
+                    </div>
+                    <!-- balance -->
+                    <div class="bg-yellow-300 p-8 rounded">
+                         <h1 class="text-2xl">Balance</h1>
+                         <h2 class="text-4xl">$ <span id="balance-total">1200 </span></h2>
+
+                    </div>
+
+
+               </div>
+          </section>
+
+          <!-- deposite and withdraw -->
+
+          <section class="mt-8">
+               <div class="grid grid-cols-2 gap-4">
+
+                    <!-- deposite -->
+                    <div class="bg-red-100 p-8 rounded">
+                         <h1 class="text-2xl">Please deposite</h1>
+                         <div>
+                              <input id="deposite-input" class="border-2 border-gray-400 rounded w-3/4 mb-4 px-2 block"
+                                   type="text" name="" placeholder="amount you want to deposite">
+
+                              <button id="deposite-button"
+                                   class="bg-yellow-600 text-white font-medium px-4 py-2 border-2 rounded">Deposite</button>
+                         </div>
+                    </div>
+
+                    <!-- withdraw -->
+                    <div class="bg-purple-100 p-8 rounded">
+                         <h1 class="text-2xl">withdraw amount</h1>
+                         <div>
+                              <input id="withdraw-input" class="border-2 border-gray-400 rounded w-3/4 mb-4 px-2 block"
+                                   type="text" name="" placeholder="amount you want to withdraw">
+
+                              <button id="withdraw-button"
+                                   class="bg-yellow-600 text-white font-medium px-4 py-2 border-2 rounded">Withdraw</button>
+                         </div>
+                    </div>
+
+               </div>
+
+          </section>
+
+
+     </main>
+
+     <script src="js/banking.js"></script>
+</body>
+
+</html>

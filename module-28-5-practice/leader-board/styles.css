@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+     font-family: 'Poppins', sans-serif;
+     background-color: #F3F1FF;
+}
+.navigation{
+     width: 100%;
+     height: 
+     94px;
+     background-color: #562EFF;
+}
+
+.nav-bar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+}
+
+.nav-item{
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+    
+}
+
+
+
+
+ul{
+     list-style-type: none;
+}
+.nav-bar a{
+     color: #FFFFFF;;
+     text-decoration: none;
+     font-size:20px;
+     margin-left: 10px;
+}
+
+.nav-item img{
+     width: 51px;
+     height: 51px;
+}
+
+
+
+
+
+main{
+     display: flex;
+     flex-direction: column;
+     
+     align-items: center;
+}
+hr{
+     border: 1px solid #D1D1D1;
+     margin-top: 30px;
+}
+
+
+.container{
+     width: 870px;;
+     background-color: #FFFFFF;
+     margin-top: 20px;
+     padding:20px;
+}
+
+.section-title{
+     color: blue;
+}
+
+.top-players{
+align-items: center;
+}
+
+.players{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-column-gap: 30px;
+     grid-row-gap: 30px;
+
+}
+.player{
+     display: flex;
+     align-items: center;
+}
+.player img{
+     width: 56px;
+     height: 56px;
+}
+.player-name{
+     margin-left: 16px;
+     font-size: 18px;
+}
+
+
+/* top-blogs */
+
+.blogs{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-row-gap: 20px;
+}
+
+.blog{
+     display: flex;
+}
+.thumbanails img{
+     width: 177px;
+     height: 117px;
+}
+
+.blogs-details{
+     margin-left: 20px;
+}
+
+.blog-title{
+     font-size: 20px;
+}
+.blog-author{
+     color: #9F9F9F;
+}
+.blog-author a{
+     text-decoration: none;
+     font-size: 16px;
+}
+
+
+
+/* course style */
+
+.courses{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-column-gap:24px ;
+}
+
+.course-banner img{
+     width: 224px;
+     height: 104px;
+}
+
+.course-info{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     
+}
+
+.fa-star,.filled{
+ color: #FFC014;
+}
+
+ 
+
+

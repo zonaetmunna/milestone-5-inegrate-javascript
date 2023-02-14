@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <header>
+          <section>
+               <div>
+                    <!-- blue  -->
+                    <!-- oclick direct use -->
+                    <button onclick="document.body.style.backgroundColor='blue'">click me for blue</button>
+
+                    <!-- green -->
+                    <!-- onclick with function use -->
+                    <button onclick="makeGreen()">click me for green</button>
+
+                    <!-- red -->
+                    <!-- event handler with onclick function declared -->
+                    <button id="button-red">click me for red</button>
+
+                    <!-- golden -->
+                    <!-- <event handler with anonoymeus -->
+                    <button id="button-Golden">click me for golden</button>
+                    <!-- Brown -->
+                    <!-- event handler with  function -->
+                    <button id="button-Brown">click me for Brown</button>
+
+                    <!-- Chartreuse -->
+                    <!-- event handler in direct line  -->
+                    <button id="button-Chartreuse">click me for Chartreuse</button>
+
+               </div>
+          </section>
+     </header>
+
+     <!-- javascript add  -->
+     <script>
+          // function use onclick
+          function makeGreen() {
+               document.body.style.backgroundColor = "Green";
+          }
+
+          // button-red id use 
+          const buttonRed = document.getElementById("button-red");
+          buttonRed.onclick = makeRed;
+          function makeRed() {
+               document.body.style.backgroundColor = "red";
+          }
+
+          // button golden
+          const buttonGolden = document.getElementById("button-Golden");
+          buttonGolden.onclick = function () {
+               document.body.style.backgroundColor = "Gold";
+          }
+
+
+          // button Brown
+          const buttonBrown = document.getElementById("button-Brown");
+          buttonBrown.addEventListener('click', function () {
+               document.body.style.backgroundColor = "Brown";
+          })
+
+          //  <!-- Chartreuse -->
+          const buttonChartreuse = document.getElementById("button-Chartreuse").addEventListener('click', function () {
+               document.body.style.backgroundColor = "Chartreuse";
+          })
+
+
+
+     </script>
+</body>
+
+</html>
